@@ -14,21 +14,29 @@ import { useEffect, useState } from "react";
 
 const Item = () => {
    
-  const [sTheme,setStheme]=useState('light');
+  const [sTheme,setStheme]=useState('');
 
   useEffect(()=>{
-    if(localStorage.theme!=='dark'){
-      let bodyClass=document.querySelector('body').classList;
-     
-      bodyClass.add('bg-[#f0f8ff]');
+
+    if(localStorage.theme==="dark"){
+    let htmlClass=document.querySelector("html").classList;
+    htmlClass.add('dark');
+    setStheme('dark')
+    localStorage.setItem('theme','dark');
+    let bodyClass=document.querySelector('body').classList;
+    bodyClass.add('duration-500')
+    bodyClass.add('bg-[#212529]')
+   
+  
      
     }
   },[sTheme]);
 
   const toggleTheme=()=>{
-    setStheme('light')
+    
     let htmlClass=document.querySelector("html").classList;
     if(localStorage.theme==='dark'){
+      setStheme('light')
       htmlClass.remove('dark');
       localStorage.removeItem('theme');
       let bodyClass=document.querySelector('body').classList;
