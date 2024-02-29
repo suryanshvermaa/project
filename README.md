@@ -22,6 +22,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## about project
 
-In this project, I used next js and tailwind css.
+In this project, Next js and tailwind css is used.
 
 
