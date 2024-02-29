@@ -27,7 +27,7 @@ const Item3=()=>{
       </div>
       <div className="sm:w-[50%]  ">
         <Image
-          className="h-full w-full hover:transform-style-3d  lg:m-auto m-8 hover:rotate-y-180 duration-1000 cursor-pointer"
+          className="h-full w-full hover:transform-style-3d  lg:m-auto ml-4 mr-4 hover:rotate-y-180 duration-1000 cursor-pointer"
           src={ThirdI}
           
         />
