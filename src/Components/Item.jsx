@@ -91,7 +91,7 @@ const Item = () => {
         </div>
         <div className="sm:w-[50%]  ">
           <Image
-            className="h-full w-full hover:transform-style-3d  lg:m-auto m-8 hover:rotate-y-180 duration-1000 cursor-pointer"
+            className="h-full w-full hover:transform-style-3d  lg:m-auto ml-4 mr-4 hover:rotate-y-180 duration-1000 cursor-pointer"
             src={FirstI}
           />
         </div>
@@ -101,7 +101,7 @@ const Item = () => {
       <Item4/>
      
       <div className=" md:mt-auto mb-[20px] mt-[100px]  ">
-      <button onClick={toggleTheme} className="    dark:border-white sm:mt-auto mt-[6px] sm:ml-auto ml-8 sm:w-auto w-full md:w-auto dark:border-[1px] text-white py-4 px-10 bg-[#212529] hover:bg-slate-700">Toggle Night Mode</button>
+      <button onClick={toggleTheme} className="    dark:border-white sm:mt-auto mt-[6px] sm:ml-auto ml-4 mr-4 sm:w-auto w-full md:w-auto dark:border-[1px] text-white py-4 px-10 bg-[#212529] hover:bg-slate-700">Toggle Night Mode</button>
     </div>
 
     </div>
